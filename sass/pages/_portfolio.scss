@@ -12,7 +12,7 @@
 .filters-item-btn {
 	min-width: 73px;
 	padding: 6px 22px;
-	color: var(--add-color);
+	color: $add-color;
 	font-family: Roboto;
 	font-size: 16px;
 	font-weight: 500;
@@ -25,8 +25,8 @@
 }
 .filters-item-btn:hover,
 .filters-item-btn:focus {
-	color: var(--white-color);
-	background-color: var(--accent-color);
+	color: $white-color;
+	background-color: $accent-color;
 	cursor: pointer;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
 		0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -69,7 +69,7 @@
 	transform: translateY(0%);
 }
 .projects-overlay-text {
-	color: var(--white-color);
+	color: $white-color;
 	line-height: 28px;
 	padding: 63px 24px;
 }
@@ -77,13 +77,13 @@
 	padding: 20px 24px;
 }
 .projects-item-title {
-	color: var(--add-color);
+	color: $add-color;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 1.08px;
 	margin-bottom: 4px;
 }
 .projects-item-text {
-	color: var(--text-color);
+	color: $text-color;
 	line-height: 1.875;
 }

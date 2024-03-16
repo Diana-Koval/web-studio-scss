@@ -30,9 +30,9 @@
 }
 .customers-item-link:hover,
 .customers-item-link:focus {
-	border-color: var(--accent-color);
+	border-color: $accent-color;
 }
 .customers-item-link:hover .customers-item-svg,
 .customers-item-link:focus .customers-item-svg {
-	fill: var(--accent-color);
+	fill: $accent-color;
 }

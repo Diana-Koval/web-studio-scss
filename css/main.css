@@ -68,7 +68,7 @@ img {
 }
 
 .logo {
-  color: var(--black-color);
+  color: var(--);
   font-family: Raleway;
   font-size: 26px;
   letter-spacing: 0.78px;
@@ -907,14 +907,4 @@ img {
 .projects-item-text {
   color: var(--text-color);
   line-height: 1.875;
-}
-
-:root {
-  --accent-color: #2196f3;
-  --black-color: #000000;
-  --add-color: #212121;
-  --background-color: #2f303a;
-  --white-color: #ffffff;
-  --text-color: #757575;
-  --team-background-color: #f5f4fa;
 }/*# sourceMappingURL=main.css.map */
