@@ -1,7 +1,7 @@
 .customers {
 	padding: 94px;
 }
-.customers-title {
+.customers__title {
 	margin-bottom: 50px;
 	color: #212121;
 	text-align: center;
@@ -9,30 +9,28 @@
 	line-height: normal;
 	letter-spacing: 1.08px;
 }
-.customers-list {
+.customers__list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
 }
-.customers-list-item {
+.customers__item {
 	display: flex;
 }
-.customers-item-svg {
+.customers__svg {
 	fill: #afb1b8;
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers-item-link {
+.customers__link {
 	padding: 16px 32px;
 	border: #afb1b8 solid 1px;
 	border-radius: 4px;
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.customers-item-link:hover,
-.customers-item-link:focus {
-	border-color: $accent-color;
-}
-.customers-item-link:hover .customers-item-svg,
-.customers-item-link:focus .customers-item-svg {
-	fill: $accent-color;
+	&:hover, &:focus {
+		border-color: $accent-color;
+	}
+	&:hover .customers__svg, &:focus .customers__svg {
+		fill: $accent-color;
+	}
 }
