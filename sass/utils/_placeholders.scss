@@ -1,0 +1,22 @@
+%sections {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+// Всі окрім footer, header, work
+
+%lists {
+    display: flex;
+    gap: 30px;
+}
+%backgrounds {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+// Для hero s features__item
+
+%svg {
+	fill: #afb1b8;
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// Для team-soc-list__svg i customers__svg
+
