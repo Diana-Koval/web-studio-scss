@@ -1,10 +1,8 @@
 .features {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	@extend %sections ;
 }
 .features__list {
-	display: flex;
-	gap: 30px;
+	@extend %lists ;
 }
 @for $i from 1 through 4 {
 	.features-list-item:nth-child(#{$i})::before {
@@ -38,10 +36,7 @@
 	}
 }
 .features__title {
-	color: $add-color;
-	font-size: 14px;
-	letter-spacing: 0.42px;
-	text-transform: uppercase;
+	@include subtitles($add-color);
 	margin-bottom: 10px;
 }
 .features__text {

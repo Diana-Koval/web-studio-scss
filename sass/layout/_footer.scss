@@ -18,7 +18,7 @@
 	font-style: normal;
 	line-height: 1.71;
 	letter-spacing: 0.42px;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include transition(color);
 	&:hover, &:focus {
 		color: $accent-color;
 	}
@@ -48,7 +48,7 @@
 	display: flex;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include transition(background-color);
 	&:hover, &:focus {
 		background-color: $accent-color;
 	}
@@ -65,14 +65,12 @@
 	margin-bottom: 20px;
 }
 .footer-form__input {
-	border-radius: 4px;
-	border: 1px solid rgba(255, 255, 255, 0.3);
+	@include inputs(1px solid rgba(255, 255, 255, 0.3));
 	background: $background-color;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	padding: 15px 16px;
 	width: 358px;
 	margin-right: 12px;
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	&:hover, &:focus {
 		border-color: $accent-color;
 		outline: none;
