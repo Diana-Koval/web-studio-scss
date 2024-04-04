@@ -48,7 +48,7 @@
 	}
 }
 .modal__close-svg {
-	@include transition(fill);
+	@include transitions(fill);
 }
 .modal__title {
 	text-align: center;
@@ -85,7 +85,7 @@
 	position: absolute;
 	bottom: 11px;
 	left: 12px;
-	@include transition(fill);
+	@include transitions(fill);
 }
 .modal-form__textarea {
 	color: $text-color;
@@ -100,7 +100,7 @@
 	height: 120px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin-top: 4px;
-	@include transition(border-color);
+	@include transitions(border-color);
 	&:hover, &:focus {
 		border-color: $accent-color;
 	}

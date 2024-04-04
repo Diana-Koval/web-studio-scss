@@ -1,7 +1,9 @@
 .team {
-	// padding: 60px 0;
+	padding: 60px 0;
 	background-color: $team-background-color;
-	@extend %sections ;
+	@media screen and (min-width: 1200px) {
+		// @extend %sections ;
+	}
 }
 .team__list {
 	@extend %lists ;
@@ -57,7 +59,7 @@
 	padding: 12px;
 	display: flex;
 	border-radius: 50%;
-	@include transition(background-color);
+	@include transitions(background-color);
 	&:hover, &:focus {
 		background-color: $accent-color;
 	}

@@ -19,7 +19,7 @@
 	padding: 16px 32px;
 	border: #afb1b8 solid 1px;
 	border-radius: 4px;
-	@include transition(border-color);
+	@include transitions(border-color);
 	&:hover, &:focus {
 		border-color: $accent-color;
 	}

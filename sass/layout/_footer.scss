@@ -18,7 +18,7 @@
 	font-style: normal;
 	line-height: 1.71;
 	letter-spacing: 0.42px;
-	@include transition(color);
+	@include transitions(color);
 	&:hover, &:focus {
 		color: $accent-color;
 	}
@@ -48,7 +48,7 @@
 	display: flex;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-	@include transition(background-color);
+	@include transitions(background-color);
 	&:hover, &:focus {
 		background-color: $accent-color;
 	}
