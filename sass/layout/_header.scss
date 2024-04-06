@@ -13,13 +13,26 @@
 	align-items: center;
 }
 .logo {
+	position: relative;
 	color: $black-color;
 	font-family: Raleway;
 	font-size: 24px;
 	letter-spacing: 0.78px;
 	text-decoration: none;
+	&::after {
+		position: absolute;
+		left: 402px;
+		top: 6px;
+		background-image: url(/images/menu_icon.svg);
+		content: "";
+		width: 24px;
+		height: 16px;
+	}
 	@media screen and (min-width: 768px) {
 		margin-right: 87px;
+		&::after {
+			display: none;
+		}
 	}
 	@media screen and (min-width: 1200px) {
 		margin-right: 93px;
