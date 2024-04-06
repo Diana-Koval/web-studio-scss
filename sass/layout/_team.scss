@@ -1,9 +1,6 @@
 .team {
-	padding: 60px 0;
 	background-color: $team-background-color;
-	@media screen and (min-width: 1200px) {
-		// @extend %sections ;
-	}
+		@extend %sections ;
 }
 .team__list {
 	@extend %lists ;
@@ -26,16 +23,21 @@
 		flex-basis: calc((100% - 90px)/4);
 	}
 }
-.work__title,
 .team__title {
-	@include titles($add-color) ;
-	// font-size: 28px;
-	// margin-bottom: 30px;
+	color: $add-color;
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 30px;
+	@media screen and (min-width: 1200px) {
+	@include titles($add-color) ;	
+	}
 }
 .team__box {
-	// padding: 30px 0;
 	padding-bottom: 24px;
 	padding-top: 30px;
+	@media screen and (min-width: 1200px) {
+		padding: 30px 0;
+	}
 }
 .team__subtitle {
 	color: $add-color;

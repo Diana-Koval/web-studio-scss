@@ -1,7 +1,7 @@
 .header {
 	padding: 16px 0;
 	@media screen and (min-width: 768px) {
-		padding: 21px 0;
+		padding: 20px 0;
 	}
 	@media screen and (min-width: 1200px) {
 		padding-top: 24px;
@@ -41,10 +41,6 @@
 		display: flex;
 		gap: 50px;
 	}
-	// @media screen and (min-width: 1200px) {
-	// 	display: flex;
-	// 	gap: 50px;
-	// }
 }
 .nav__link--current {
 	color: $accent-color;
@@ -74,9 +70,6 @@
 	@media screen and (min-width: 768px) {
 		padding: 32px 0;
 	}
-	// @media screen and (min-width: 1200px) {
-	// 	padding: 32px 0;
-	// }
 }
 .address {
 	margin-left: auto;
@@ -87,11 +80,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		padding: 21px 0;
+		// padding: 21px 0;
 	}
 	@media screen and (min-width: 1200px) {
-		display: flex;
+		flex-direction: row;
 		gap: 50px;
+		padding: 0;
 	}
 }
 .address__svg {

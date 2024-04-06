@@ -1,11 +1,23 @@
 .work {
-	padding-bottom: 94px;
+	display: none;
+	@media screen and (min-width: 1200px) {
+		display: block;
+		padding-bottom: 94px;
+	}
 }
 .work__list {
 	@extend %lists ;
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
 }
 .work__item {
 	position: relative;
+}
+.work__title {
+	@include titles($add-color) ;
+	font-size: 28px;
+	margin-bottom: 30px;
 }
 .work__subtitle {
 	@include subtitles($white-color);

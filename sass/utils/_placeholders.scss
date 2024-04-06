@@ -1,12 +1,18 @@
 %sections {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 60px 0;
+	@media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
 }
 // Всі окрім footer, header, work
 
 %lists {
     display: flex;
     gap: 30px;
+    @media screen and (min-width: 768px) {
+		flex-wrap: wrap;
+    	}
 }
 
 %svg {

@@ -2,21 +2,38 @@
 	@extend %sections ;
 }
 .customers__title {
-	@include titles($black-color);
+	text-align: center;
+	margin-bottom: 30px;
+	color: $black-color;
+	font-size: 28px;
+	@media screen and (min-width: 1200px) {
+		@include titles($black-color);
+	}
 }
 .customers__list {
 	@extend %lists ;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
 }
 .customers__item {
 	display: flex;
+	width: 210px;
+	@media screen and (min-width: 768px) {
+		width: 226px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+	}
 }
 .customers__svg {
 	@extend %svg ;
 }
 .customers__link {
-	padding: 16px 32px;
+	padding: 16px 52px;
 	border: #afb1b8 solid 1px;
 	border-radius: 4px;
 	@include transitions(border-color);
@@ -25,5 +42,11 @@
 	}
 	&:hover .customers__svg, &:focus .customers__svg {
 		fill: $accent-color;
+	}
+	@media screen and (min-width: 768px) {
+		padding: 16px 60px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 16px 32px;
 	}
 }
