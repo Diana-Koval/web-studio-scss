@@ -4,21 +4,26 @@
 	padding-bottom: 60px;
 }
 .footer .container {
-	margin-bottom: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 60px;
+	text-align: center;
+	// margin-bottom: 60px;
 	@media screen and (min-width: 768px) {
-		display: flex;
-		gap: 165px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		column-gap: 165px;
 	}
 	@media screen and (min-width: 1200px) {
-	display: flex;
-	gap: 70px;
-	margin-bottom: 0;
+		gap: 70px;
+		margin-bottom: 0;
+		text-align: start;
 	}
 }
 .footer__info {
-	display: flex;
 	flex-shrink: 0;
-	padding-left: 76px;
 }
 
 // ???? як...
@@ -28,6 +33,9 @@
 	color: $white-color;
 	margin-bottom: 20px;
 	display: inline-block;
+	@media screen and (min-width: 768px) {
+		margin-right: 0;
+	}
 	@media screen and (min-width: 1200px) {
 		font-size: 26px;
 	}
@@ -39,10 +47,11 @@
 	line-height: 1.71;
 	letter-spacing: 0.42px;
 	@include transitions(color);
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		color: $accent-color;
 	}
-	@media screen and (min-width:480px) and (max-width: 1199px) {
+	@media screen and (min-width: 480px) and (max-width: 1199px) {
 		text-align: center;
 	}
 }
@@ -53,6 +62,11 @@
 	}
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 9px;
+	}
+}
+.footer-soc {
+	@media screen and (min-width: 768px) {
+		margin-top: -45px;
 	}
 }
 .footer-soc__title {
@@ -75,17 +89,28 @@
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
 	@include transitions(background-color);
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		background-color: $accent-color;
 	}
 }
 .footer-soc__svg {
 	fill: $white-color;
 }
-.footer-form {
-	@media screen and (min-width:480px) and (max-width: 1199px) {
-		display: flex;
-		justify-content: center;
+// .footer-form {
+// 	@media screen and (min-width:480px) and (max-width: 1199px) {
+// 		display: flex;
+// 		justify-content: center;
+// 	}
+// }
+.footer-form__form {
+	display: flex;
+	max-width: 450px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	@media screen and (min-width: 1200px) {
+		max-width: 570px;
 	}
 }
 .footer-form__title {
@@ -103,13 +128,14 @@
 	padding: 15px 16px;
 	width: 450px;
 	margin-bottom: 20px;
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		border-color: $accent-color;
 		outline: none;
 	}
 	@media screen and (min-width: 1200px) {
 		width: 358px;
-	margin-right: 12px;
-	margin-bottom: 0;
+		margin-right: 12px;
+		margin-bottom: 0;
 	}
 }

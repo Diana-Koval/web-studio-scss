@@ -19,20 +19,20 @@
 	font-size: 24px;
 	letter-spacing: 0.78px;
 	text-decoration: none;
-	&::after {
-		position: absolute;
-		left: 402px;
-		top: 6px;
-		background-image: url(/images/menu_icon.svg);
-		content: "";
-		width: 24px;
-		height: 16px;
-	}
+	// &::after {
+	// 	position: absolute;
+	// 	left: 402px;
+	// 	top: 6px;
+	// 	background-image: url(/images/menu_icon.svg);
+	// 	content: "";
+	// 	width: 24px;
+	// 	height: 16px;
+	// }
 	@media screen and (min-width: 768px) {
 		margin-right: 87px;
-		&::after {
-			display: none;
-		}
+		// &::after {
+		// 	display: none;
+		// }
 	}
 	@media screen and (min-width: 1200px) {
 		margin-right: 93px;
@@ -41,6 +41,7 @@
 }
 .logo__span {
 	color: $accent-color;
+	margin-right: -7px;
 }
 
 .nav {
@@ -131,4 +132,20 @@
 	@media screen and (min-width: 1200px) {
 		font-size: 14px;
 	}
+}
+.menu__btn {
+	position: relative;
+	background-color: transparent;
+	border: none;
+	width: 40px;
+	height: 40px;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.menu__svg {
+	position: absolute;
+	fill: $black-color;
+	width: 24px;
+	height: 16px;
 }

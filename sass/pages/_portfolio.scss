@@ -7,6 +7,9 @@
 	flex-wrap: wrap;
 	gap: 8px;
 	margin-bottom: 40px;
+	@media screen and (max-width: 767px){
+		max-width: 350px;
+	}
 	@media screen and (min-width: 768px){
 		margin-bottom: 30px;
 		flex-wrap: nowrap;
@@ -90,8 +93,16 @@
 }
 .projects__overlay-text {
 	color: $white-color;
+	font-size: 18px;
 	line-height: 28px;
-	padding: 63px 24px;
+	padding: 77px 24px;
+	@media screen and (min-width: 768px) {
+		padding: 49px 24px 77px 24px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 63px 24px;
+	}
+	
 }
 .projects__box {
 	padding: 20px 24px;
