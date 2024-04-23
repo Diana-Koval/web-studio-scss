@@ -10,9 +10,9 @@
 	flex-direction: column;
 	gap: 60px;
 	text-align: center;
-	// margin-bottom: 60px;
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
+		align-items: flex-start;
 		flex-wrap: wrap;
 		column-gap: 165px;
 	}
@@ -62,11 +62,6 @@
 	}
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 9px;
-	}
-}
-.footer-soc {
-	@media screen and (min-width: 768px) {
-		margin-top: -45px;
 	}
 }
 .footer-soc__title {
@@ -126,12 +121,15 @@
 	background: $background-color;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 	padding: 15px 16px;
-	width: 450px;
+	width: 290px;
 	margin-bottom: 20px;
 	&:hover,
 	&:focus {
 		border-color: $accent-color;
 		outline: none;
+	}
+	@media screen and (min-width: 480px) {
+		width: 450px;
 	}
 	@media screen and (min-width: 1200px) {
 		width: 358px;
