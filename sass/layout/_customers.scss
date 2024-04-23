@@ -1,5 +1,5 @@
 .customers {
-	@extend %sections ;
+	@extend %sections;
 }
 .customers__title {
 	text-align: center;
@@ -11,7 +11,7 @@
 	}
 }
 .customers__list {
-	@extend %lists ;
+	@extend %lists;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
@@ -22,32 +22,34 @@
 .customers__item {
 	display: flex;
 	// width: 210px;
-	flex-basis: calc((100% - 30px)/2);
+	flex-basis: calc((100% - 30px) / 2);
 	@media screen and (min-width: 768px) {
 		// width: 226px;
-		flex-basis: calc((100% - 30px)/3);
+		flex-basis: calc((100% - 30px) / 3);
 	}
 	@media screen and (min-width: 1200px) {
 		// width: 170px;
-		flex-basis: calc((100% - 30px)/6);
+		flex-basis: calc((100% - 30px) / 6);
 	}
 }
 .customers__svg {
-	@extend %svg ;
+	@extend %svg;
 }
 .customers__link {
-	padding: 16px 52px;
+	padding: 16px 0;
 	border: #afb1b8 solid 1px;
 	border-radius: 4px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 	@include transitions(border-color);
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		border-color: $accent-color;
 	}
-	&:hover .customers__svg, &:focus .customers__svg {
+	&:hover .customers__svg,
+	&:focus .customers__svg {
 		fill: $accent-color;
-	}
-	@media screen and (min-width: 768px) {
-		padding: 16px 60px;
 	}
 	@media screen and (min-width: 1200px) {
 		padding: 16px 32px;

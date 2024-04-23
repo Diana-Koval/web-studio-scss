@@ -61,14 +61,14 @@
 	opacity: 1;
 	&::after {
 		bottom: 0;
-	content: "";
-	display: block;
-	height: 4px;
-	width: 105%;
-	background-color: $accent-color;
-	position: absolute;
-	border-radius: 2px;
-	@include transitions(opacity);
+		content: "";
+		display: block;
+		height: 4px;
+		width: 105%;
+		background-color: $accent-color;
+		position: absolute;
+		border-radius: 2px;
+		@include transitions(opacity);
 	}
 	&:hover::after {
 		opacity: 0.5;
@@ -78,7 +78,8 @@
 	color: $add-color;
 	position: relative;
 	@include transitions(color);
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		color: $accent-color;
 	}
 	@media screen and (min-width: 768px) {
@@ -123,7 +124,8 @@
 	&:hover {
 		color: $accent-color;
 	}
-	&:hover .address__svg, &:focus .address__svg {
+	&:hover .address__svg,
+	&:focus .address__svg {
 		fill: $accent-color;
 	}
 	@media screen and (min-width: 768px) {
@@ -134,9 +136,11 @@
 	}
 }
 .menu__btn {
-	position: relative;
+	// position: relative;
 	background-color: transparent;
 	border: none;
+	padding: 12px 8px;
+	margin-right: 15px;
 	width: 40px;
 	height: 40px;
 	@media screen and (min-width: 768px) {
@@ -144,7 +148,7 @@
 	}
 }
 .menu__svg {
-	position: absolute;
+	// position: absolute;
 	fill: $black-color;
 	width: 24px;
 	height: 16px;
