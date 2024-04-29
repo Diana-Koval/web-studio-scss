@@ -69,6 +69,7 @@
 			<div class="menu__container js-menu-container" id="mobile-menu">
 				<button class="menu-toggle js-close-menu">
 					<svg
+						class="menu__toggle-svg"
 						fill="currentColor"
 						viewBox="0 0 20 20"
 						xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +94,30 @@
 						<a class="menu__link link" href="./index.html">Контакти</a>
 					</li>
 				</ul>
+				<div class="menu__bottom-lists">
+					<ul class="menu__contacts list">
+						<li class="menu__contacts-item">
+							<a href="tel:+380961111111" class="menu__contacts-number link">+38 096 111 11 11</a>
+						</li>
+						<li class="menu__contacts-item">
+							<a href="info@devstudio.com" class="menu__contacts-link link">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="menu__soc list">
+						<li class="menu__soc-item">
+							<a href="" class="menu__soc-link link">Instagram</a>
+						</li>
+						<li class="menu__soc-item">
+							<a href="" class="menu__soc-link link">Twitter</a>
+						</li>
+						<li class="menu__soc-item">
+							<a href="" class="menu__soc-link link">Facebook</a>
+						</li>
+						<li class="menu__soc-item">
+							<a href="" class="menu__soc-link link">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -476,5 +501,11 @@
 		</div>
 		<script src="./js/mobie-menu.js"></script>
 		<script src="./js/modal.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
