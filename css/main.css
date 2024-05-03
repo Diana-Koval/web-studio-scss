@@ -1184,6 +1184,11 @@ img {
   font-weight: 500;
   color: #2196f3;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .menu__contacts-number {
+    font-size: 28px;
+  }
+}
 
 .menu__soc {
   display: -webkit-box;

@@ -104,6 +104,9 @@
 	font-size: 34px;
 	font-weight: 500;
 	color: $accent-color;
+	@media screen and (min-width:320px) and (max-width:479px) {
+		font-size: 28px;
+	}
   }
   .menu__soc {
 	display: flex;
